@@ -1,0 +1,220 @@
+*{
+  font-family: 'Mitr', monospace;
+}
+
+.outline{
+  padding: 10px;
+  border-color: #33f17c;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 10px;
+}
+.Hero{
+  font-size: 45px;
+  margin: 0px;
+  padding-left: 0px;
+  
+}
+.card{
+  transition: 0.3s ease-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  border-color:#e94de3;
+  border-width: 1px;
+}
+
+.navbar{
+  background-color: rgb(0,0,0,0);
+  
+}
+
+.navbar.animate
+{
+  background-image: linear-gradient(144deg, #33f17c, #39d0cb, #e94de3 99% );
+}
+
+
+/* CSS */
+.button{
+  align-items: center;
+  border: none;
+  background-color: #2d2c2c;
+  border-radius: 40px;
+  color: #ffffff;
+  justify-content: center;
+  padding: 15px;
+  margin: 12px;
+  transition: 0.2s ease ;
+
+  
+}
+
+.button:hover
+{
+  transform: scale(1.1);
+  transition-duration: 0.2s ease;
+}
+
+
+.button2{
+  align-items: center;
+  background-color: #ffffff00;
+  border-radius: 40px;
+  color: #0a0a0a;
+  justify-content: center;
+  line-height: 1em;
+  padding: 10px;
+  margin: 10px;
+ 
+}
+
+.button3{
+  align-items: center;
+ border: none;
+ background-color: #2d2c2c;
+ border-radius: 40px;
+ color: #ffffff;
+ justify-content: center;
+ transition: 0.2s ease ;
+ line-height: 1em;
+ padding: 8px;
+
+}
+.button3:hover
+{
+ transform: scale(1.1);
+ transition-duration: 0.2s ease;
+}
+
+
+
+.name{
+ padding-top: 10px;
+ color: #000000;
+ display: flex;
+}
+  
+.paragraph{
+  font-size: 18px;
+  color: white;
+  border-radius: 25px;
+}
+
+.typewriter-container {
+  box-sizing: border-box;
+}
+
+
+.typewriter {
+ 
+ 
+  display: flex;
+  display: inline-block; /* Changed from flex to inline-block */
+  color: #000000;
+  overflow: hidden;
+  border-right: 0.12em solid rgb(136, 0, 255);
+  white-space: nowrap;
+  margin: 30px auto;
+  letter-spacing: 0.03em;
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { max-width: 0% }
+  to { max-width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(4, 0, 0) }
+}
+
+@media screen and (max-width: 768px) {
+  .typewriter {
+    animation: 
+    typing 3s steps(30, end),
+    blink-caret .5s step-end infinite;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .typewriter {
+    animation: 
+    typing 3s steps(20, end),
+    blink-caret .5s step-end infinite;
+  }
+}
+
+
+
+.bg-img{
+  height: 1500px;
+  
+   background-image: linear-gradient(144deg, #33f17c, #39d0cb, #e94de3 75% );
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed; background-repeat: no-repeat;
+
+   object-fit: cover;
+   border: 10px;
+   border-color: black;
+   
+}
+
+.progress-bar
+{
+
+ width: 300px;
+ height: 15px;
+ background-image: linear-gradient(144deg, #33f17c, #39d0cb, #e94de3 75% );
+ background-size: 0%; 
+ background-repeat:no-repeat;
+ transition: background-size 3s; 
+
+}
+
+.progress-bar-1.animate {
+  background-size: 60%; /* End at 60% when .animate class is added */
+}
+.progress-bar-2.animate {
+  background-size: 40%; /* End at 60% when .animate class is added */
+}
+
+.progress-bar-3.animate {
+  background-size: 50%; /* End at 60% when .animate class is added */
+}
+
+.progress-bar-4.animate {
+  background-size: 35%; /* End at 60% when .animate class is added */
+}
+
+.progress-bar-5.animate {
+  background-size: 45%; /* End at 60% when .animate class is added */
+}
+
+
+
+
+@keyframes bar-fill
+{
+  from {width: 0}
+  to { width: 100% }
+}
+
+.container-bar
+{
+  width:300px;
+  height: 19px;
+  border: solid;
+  border-color: #e94de3;
+}
+
+
+
+
