@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joseph Inumos Official Homepage</title>
+    <title> Joseph Inumos Official Homepage </title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Kanit&family=Mitr&family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link href="./index.css" rel="stylesheet">
     <script>   
      function handleScroll()
@@ -23,7 +24,13 @@
      
      }
 
+     function handleClick()
+     {
+      document.querySelector(".navbar-collapse").classList.add('animate')
+     }
+
   window.addEventListener('scroll', handleScroll);
+
   document.addEventListener('DOMContentLoaded', function() {
   const progressBars = document.querySelectorAll('.progress-bar'); 
   const observer = new IntersectionObserver((entries) => {
@@ -37,43 +44,50 @@
 
   progressBars.forEach(bar => observer.observe(bar));
 });
+
     </script>
 
-           
 </head>
   <body>
 
-    <nav id="myNav" class = "navbar navbar-expand-lg container-fluid d-flex fixed-top sticky">
+    <nav id="myNav" class="navbar navbar-expand-lg container-fluid fixed-top sticky">
+      <div class="container-fluid">
       
-      <div class="container-fluid d-flex justify-content-center">
-        <ul class="nav">
-          <li class="nav-item ">
-            <a class="nav-link button2" aria-current="page"  href="#home"> HOME </a>
-          </li>
-          <li class="nav-item">
-            <a href="#aboutme" class="nav-link button2"> ABOUT ME</a>
-          </li>
-          <li class="nav-item">
-            <a href="#projects" class="nav-link button2">  PROJECTS </a>
-          </li>
-          
-          <li class="nav-item">
-            <a href="#contact" class="nav-link button2"> CONTACT </a>
-          </li>
-        </ul>
+        <button onclick="handleClick()" class="navbutton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+       
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link button2" aria-current="page" href="#home">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a href="#aboutme" class="nav-link button2">ABOUT ME</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link button2">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link button2">CONTACT</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      </nav>
+    </nav>
     
     
-      <div class="row text-center  bg-img pt-5 py-5 " >
-        <div class="name col-lg-7 container-fluid py-4 text-center " id="home">
+    
+      <div class="row text-center  bg-img pt-5 py-5 " id="home" >
+        <div class="name col-lg-7 container-fluid py-4 text-center " >
           <h1 class=" fw-bold display-2 typewriter ">
             /* JOSEPH INUMO JR */
           </h1>
         </div> 
         
 
-        <div class="col-lg-7 container-fluid py-4">
+        <div class="col-lg-7 container-fluid py-5">
           <p class =" Hero">
             If you`re looking at this then you are looking at the page of a Future Full-Stack Developer.
           </p>
@@ -156,7 +170,7 @@
               <br>
             </div>
             
-            <div id="" class="col-lg-6 text-center">
+            <div id="aboutme" class="col-lg-6 text-center">
               <h2 style="color: white;">
                 ABOUT ME
                 <img src="./assets/waving-hand-sign-tone-5.svg" width="35px">
@@ -196,7 +210,7 @@
                   coding (suprising) and a desire to gain experience in all aspects of computer science from Web dev to machine learning.
                 <br>
                 <br>
-                  I am recent graduate fellow of the CUNY Tech Prep Program and Front End Intern at Oppizi USA
+                  I am a recent graduate fellow of the CUNY Tech Prep Program and Front End Intern at Oppizi USA
 
                 </p>
   
