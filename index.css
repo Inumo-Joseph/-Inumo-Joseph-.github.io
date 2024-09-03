@@ -169,6 +169,11 @@
     typing 3s steps(20, end),
     blink-caret .5s step-end infinite;
   }
+
+  .Hero{
+    font-size: 35px;
+  }
+  
 }
 
 
