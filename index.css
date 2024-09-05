@@ -123,21 +123,19 @@
 }
 
 .typewriter-container {
-  box-sizing: border-box;
+ 
 }
 
 
 .typewriter {
  
- 
-  display: flex;
-  display: inline-block; /* Changed from flex to inline-block */
+  font-size: 65px;
   color: #000000;
   overflow: hidden;
   border-right: 0.12em solid rgb(136, 0, 255);
   white-space: nowrap;
   margin: 30px auto;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.005em;
   animation: 
     typing 3s steps(25, end),
     blink-caret .5s step-end infinite;
@@ -156,6 +154,7 @@
 
 @media screen and (max-width: 768px) {
   .typewriter {
+    font-size: 35px;
     animation: 
     typing 3s steps(30, end),
     blink-caret .5s step-end infinite;
@@ -166,14 +165,14 @@
   .typewriter {
     font-size: 35px;
     animation: 
-    typing 3s steps(20, end),
+    typing 3s steps(24, end),
     blink-caret .5s step-end infinite;
   }
 
   .Hero{
     font-size: 35px;
   }
-  
+
 }
 
 
