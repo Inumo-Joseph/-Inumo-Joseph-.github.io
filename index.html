@@ -28,7 +28,7 @@
 
      function handleClick()
      {
-      document.querySelector(".navbar-collapse").classList.add('animate')
+      document.querySelector('.navbar').classList.add('animate');
       
     }
 
@@ -56,7 +56,7 @@
     <nav id="myNav" class="navbar navbar-expand-lg container-fluid fixed-top sticky">
       <div class="container-fluid">
       
-        <button onclick="handleClick()" class="navbutton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button onclick="handleClick()" class="navbutton nav-bar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
     
@@ -78,12 +78,11 @@
           </ul>
         </div>
       </div>
+
+  
     </nav>
-    
-    
-    
       <div class="row text-center  bg-img pt-5 py-5 " id="home" >
-        <div class="name col-lg-7 container-fluid py-4 text-center" >
+        <div class="name col container-fluid py-4 text-center typewriter-container" >
           <h1 class=" fw-bold typewriter">
             /* JOSEPH INUMO JR */ 
           </h1>
@@ -283,7 +282,7 @@
 
               <div class="container-fluid d-flex justify-content-center pt-4 col-lg-5">
                 <div class="card text-white bg-dark" style="width: 32rem; ">
-                  <a href="" target="blank">
+                  <a href="https://github.com/Spring-2024-CTP-Project/SPRING-2024" target="_blank"> </a>
                     <img src="./assets/DNDAI.png" class="card-img-top">
                   </a>
       
